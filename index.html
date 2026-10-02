@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stefania Nardella — Portfolio</title>
+    <title>Stefania Nardella - Portfolio</title>
     <meta name="description" content="Portfolio di Stefania Nardella, Web Designer e Front-end Developer.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,287 +15,26 @@
 </head>
 
 <body>
-
-    <header class="nav">
-        <div class="wrap nav-in">
-            <a href="#top" class="brand"><span class="brand-name">STEFANIA NARDELLA</span></a>
-            <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
-            <nav class="menu" id="menu">
-                <a href="#top" class="on">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a
-                    href="#projects">Projects</a><a href="#contact">Contact</a>
-                <a href="#contact" class="btn btn-line btn-sm">Let's talk <i class="arr">→</i></a>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <div class="container">
+                <h3>Stefania Nardella</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#competenze">Competenze</a></li>
+                    <li><a href="#progetti">Progetti</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+                <a href="#contatti" class="button">Scrivimi</a>
+            </div><!-- end container -->
+        </nav>
     </header>
 
-    <main id="top">
-        <!-- HERO -->
-        <section class="hero wrap">
-            <a href="#about" class="scroll" aria-label="Scorri"><span>SCROLL</span><i></i></a>
-            <div class="hero-text">
-                <p class="eyebrow">WEB DESIGNER / FRONT-END DEVELOPER <span class="line"></span></p>
-                <h1>Web experiences, designed and built with <span class="hl">precision.</span></h1>
-                <p class="lead">Creo esperienze web moderne, responsive e funzionali, combinando design, tecnologia e
-                    attenzione ai dettagli.</p>
-                <div class="actions">
-                    <a href="#projects" class="btn btn-fill">View my projects <i class="arr">→</i></a>
-                    <a href="#about" class="btn btn-line">About me</a>
-                </div>
-            </div>
 
-            <div class="art" aria-hidden="true">
-                <div class="sphere"></div>
-                <div class="glyph">&lt;/&gt;</div>
-                <ul class="tech">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                </ul>
-                <div class="laptop">
-                    <div class="lscreen">
-                        <div class="tree"><span>● ● ●</span>
-                            <p>▸ src</p>
-                            <p>&nbsp;&nbsp;components</p>
-                            <p>&nbsp;&nbsp;pages</p>
-                            <p>&nbsp;&nbsp;assets</p>
-                            <p>&nbsp;&nbsp;styles</p>
-                        </div>
-                        <pre>&lt;section class="hero"&gt;
-  &lt;div class="container"&gt;
-    &lt;h1&gt;Better Web.&lt;/h1&gt;
-    &lt;p&gt;Ideas. Code. Results.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</pre>
-                    </div>
-                    <div class="lbase"></div>
-                </div>
-                <div class="term">
-                    <p>&gt; npm run dev</p>
-                    <p class="g">✓ Vite app running...</p>
-                    <p>✓ Local: http://localhost:5173</p>
-                </div>
-                <div class="chart"><svg viewBox="0 0 160 90" preserveAspectRatio="none">
-                        <polyline points="0,80 30,70 55,72 80,50 105,55 130,25 160,10" />
-                    </svg></div>
-            </div>
-        </section>
 
-        <!-- ABOUT -->
-        <section id="about" class="sec wrap about">
-            <div class="num"><b>01</b><i></i></div>
-            <div class="about-fig">
-                <p class="label">ABOUT ME</p>
-                <figure class="portrait" aria-label="Ritratto (sostituisci con la tua foto)">
-                    <div class="frame"></div>
-                    <svg viewBox="0 0 200 250" preserveAspectRatio="xMidYMax slice">
-                        <defs>
-                            <linearGradient id="sil" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0" stop-color="#1b2a55" />
-                                <stop offset="1" stop-color="#070b1a" />
-                            </linearGradient>
-                        </defs>
-                        <path
-                            d="M70 250C60 205 75 190 95 182V165C78 160 70 140 72 118 72 80 92 55 122 60c28 6 38 40 28 68-5 17-15 30-25 37l3 17c27 10 42 28 44 68z"
-                            fill="url(#sil)" />
-                    </svg>
-                </figure>
-                <span class="code-ic">&lt;/&gt;</span>
-            </div>
-            <div class="about-text">
-                <h2>Hi, I'm Stefania.</h2>
-                <p class="lead">Sono una Web Designer e Front-end Developer appassionata di tecnologia, design e
-                    creatività. Aiuto le persone e le aziende a trasformare le loro idee in esperienze digitali moderne,
-                    funzionali e di impatto.</p>
-                <ul class="meta">
-                    <li><svg viewBox="0 0 24 24">
-                            <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.800 7 12 7 12z" />
-                            <circle cx="12" cy="10" r="2.500" />
-                        </svg>Italy</li>
-                    <li><svg viewBox="0 0 24 24">
-                            <rect x="3" y="5" width="18" height="14" rx="2" />
-                            <path d="m3 7 9 6 9-6" />
-                        </svg><a href="mailto:stefania.nardella@gmail.com">stefania.nardella@gmail.com</a></li>
-                    <li class="pill sq"><svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="9" />
-                            <circle cx="12" cy="12" r="3" />
-                        </svg>Freelance</li>
-                </ul>
-                <ul class="chips">
-                    <li class="pill">Web Design</li>
-                    <li class="pill">Front-end Development</li>
-                    <li class="pill">UI / UX</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- SKILLS -->
-        <section id="skills" class="sec wrap skills">
-            <div class="num"><b>02</b><i></i></div>
-            <div class="head">
-                <p class="label">MY SKILLS</p>
-                <h2>Technologies I work with.</h2>
-                <p class="sub">Una combinazione di strumenti e tecnologie per creare soluzioni digitali moderne,
-                    performanti e su misura.</p>
-            </div>
-            <div class="cols">
-                <div class="skill"><svg viewBox="0 0 24 24">
-                        <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
-                    </svg>
-                    <h3>Development</h3>
-                    <p>HTML <span>CSS</span> JavaScript <span>PHP</span> ReactJS WordPress</p>
-                </div>
-                <div class="skill"><svg viewBox="0 0 24 24">
-                        <path d="m14 4 6 6-9 9H5v-6zM12 6l6 6" />
-                    </svg>
-                    <h3>Design</h3>
-                    <p>Photoshop Illustrator <span>Figma</span></p>
-                </div>
-                <div class="skill"><svg viewBox="0 0 24 24">
-                        <ellipse cx="12" cy="6" rx="8" ry="3" />
-                        <path d="M4 6v6c0 1.700 3.600 3 8 3s8-1.300 8-3V6M4 12v6c0 1.700 3.600 3 8 3s8-1.300 8-3v-6" />
-                    </svg>
-                    <h3>CMS</h3>
-                    <p>WordPress</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- PROJECTS -->
-        <section id="projects" class="sec wrap projects">
-            <div class="num"><b>03</b><i></i></div>
-            <div class="head">
-                <p class="label">FEATURED PROJECTS</p>
-                <h2>Selected Projects.</h2>
-                <p class="sub">Alcuni dei progetti che ho realizzato, tra design, sviluppo e creatività.</p>
-            </div>
-            <div class="list">
-                <article class="row">
-                    <div class="thumb t-mario" aria-hidden="true">
-                        <div class="mscreen"><b>SUPER<br>MARIO BROS.</b><span></span></div>
-                    </div>
-                    <div class="body">
-                        <h3><span class="badge">FEATURED</span> Mockup Super Mario Bros</h3>
-                        <p>Un mockup accattivante dell'iconico gioco in chiave moderna, con un design pulito e dettagli
-                            curati.</p>
-                        <ul class="chips">
-                            <li class="pill">HTML</li>
-                            <li class="pill">CSS</li>
-                            <li class="pill">JavaScript</li>
-                        </ul>
-                        <a href="#" class="link">View project <i class="arr">→</i></a>
-                    </div>
-                    <a href="#" class="go" aria-label="Apri progetto Mario">→</a>
-                </article>
-                <article class="row">
-                    <div class="thumb t-meteo" aria-hidden="true">
-                        <div class="tab"><b>12°</b><span>☀</span></div>
-                    </div>
-                    <div class="body">
-                        <h3>App Meteo</h3>
-                        <p>Un'applicazione semplice e intuitiva per consultare le previsioni del tempo.</p>
-                        <ul class="chips">
-                            <li class="pill">HTML</li>
-                            <li class="pill">CSS</li>
-                            <li class="pill">JavaScript</li>
-                        </ul>
-                        <a href="#" class="link">View project <i class="arr">→</i></a>
-                    </div>
-                    <a href="#" class="go" aria-label="Apri progetto App Meteo">→</a>
-                </article>
-                <article class="row">
-                    <div class="thumb t-vel" aria-hidden="true">
-                        <div class="tab dark"><em>Velocity</em></div>
-                    </div>
-                    <div class="body">
-                        <h3>Velocity</h3>
-                        <p>Sito web moderno e responsive per un brand innovativo.</p>
-                        <ul class="chips">
-                            <li class="pill">HTML</li>
-                            <li class="pill">CSS</li>
-                            <li class="pill">JavaScript</li>
-                            <li class="pill">React</li>
-                        </ul>
-                        <a href="#" class="link">View project <i class="arr">→</i></a>
-                    </div>
-                    <a href="#" class="go" aria-label="Apri progetto Velocity">→</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="wrap">
-            <div class="cta">
-                <div class="cta-text">
-                    <p class="mono">&gt; Ready to build<br>&nbsp;&nbsp;something amazing?</p>
-                    <h2>Have a project in mind?</h2>
-                    <p class="sub">Parliamo del tuo progetto. Contattami per una consulenza, una collaborazione o
-                        semplicemente un saluto.</p>
-                    <a href="mailto:stefania.nardella@gmail.com" class="btn btn-fill btn-sm">Scrivimi ora <i
-                            class="arr">→</i></a>
-                </div>
-
-                <form id="contactForm" action="contact.php" method="post" novalidate>
-                    <div class="two">
-                        <label>Nome *<input name="name" required autocomplete="name"></label>
-                        <label>Email *<input name="email" type="email" required autocomplete="email"></label>
-                    </div>
-                    <label>Oggetto
-                        <select name="subject">
-                            <option value="">Seleziona...</option>
-                            <option>Nuovo progetto</option>
-                            <option>Collaborazione</option>
-                            <option>Consulenza</option>
-                            <option>Altro</option>
-                        </select>
-                    </label>
-                    <label>Messaggio *<textarea name="message" rows="3" placeholder="Raccontami il tuo progetto..."
-                            required></textarea></label>
-                    <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-                    <div class="send"><button class="btn btn-fill btn-sm" type="submit">Invia messaggio <i
-                                class="arr">→</i></button>
-                        <p class="status" role="status" aria-live="polite"></p>
-                    </div>
-                </form>
-
-                <pre class="coffee" aria-hidden="true">Coffee
-<span>Code</span>
-Better
-Ideas
-<b>&gt;_</b></pre>
-            </div>
-        </section>
-    </main>
-
-    <footer class="foot">
-        <div class="wrap foot-in">
-            <div class="foot-brand"><span class="logo">SN</span>
-                <div><b>STEFANIA NARDELLA</b><small>Web Designer / Front-end Developer</small></div>
-            </div>
-            <div class="social">
-                <a href="#" aria-label="LinkedIn">in</a>
-                <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2a10 10 0 0 0-3.160 19.490c.5.090.68-.220.68-.480v-1.700c-2.780.6-3.370-1.340-3.370-1.340-.45-1.160-1.110-1.470-1.110-1.470-.91-.62.07-.61.07-.61 1 .07 1.530 1.030 1.530 1.030.9 1.520 2.340 1.080 2.910.83.09-.65.35-1.090.63-1.340-2.220-.25-4.550-1.110-4.550-4.940 0-1.090.39-1.980 1.030-2.680-.1-.25-.45-1.270.1-2.650 0 0 .84-.27 2.750 1.020a9.500 9.500 0 0 1 5 0c1.910-1.290 2.750-1.020 2.750-1.020.55 1.380.2 2.400.1 2.650.64.7 1.030 1.590 1.030 2.680 0 3.840-2.340 4.680-4.570 4.930.36.310.68.920.68 1.850v2.740c0 .27.18.58.69.48A10 10 0 0 0 12 2z" />
-                    </svg></a>
-                <a href="#" aria-label="Behance">Bē</a>
-                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" class="st">
-                        <rect x="3" y="3" width="18" height="18" rx="5" />
-                        <circle cx="12" cy="12" r="4" />
-                    </svg></a>
-            </div>
-            <a class="foot-mail" href="mailto:stefania.nardella@gmail.com"><svg viewBox="0 0 24 24">
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <path d="m3 7 9 6 9-6" />
-                </svg>stefania.nardella@gmail.com</a>
-        </div>
-        <div class="wrap foot-in bottom">
-            <p>© 2025 Stefania Nardella. All rights reserved.</p><a href="#top" class="totop">Back to top <i
-                    class="arr">↑</i></a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

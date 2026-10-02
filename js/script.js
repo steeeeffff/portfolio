@@ -1,4 +1,4 @@
-// Menu mobile
+/* // Menu mobile
 const burger = document.querySelector('.burger');
 const menu = document.getElementById('menu');
 const setMenu = open => {
@@ -44,4 +44,25 @@ form.addEventListener('submit', async e => {
         status.classList.add('err');
     }
     btn.disabled = false;
-});
+}) */;
+
+(function () {
+    var h = document.getElementById('hero'), t = document.getElementById('tag');
+    h.addEventListener('pointermove', function (e) {
+        var r = h.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+        h.style.setProperty('--x', x + 'px'); h.style.setProperty('--y', y + 'px');
+        t.textContent = 'x ' + Math.round(x) + ' · y ' + Math.round(y);
+    });
+})();
+/* Lenis: scroll fluido (opzionale, disattivato con prefers-reduced-motion) */
+if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.style.scrollBehavior = 'auto';
+    var lenis = new Lenis();
+    (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+            var el = document.querySelector(a.getAttribute('href'));
+            if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: -64 }); }
+        });
+    });
+}
