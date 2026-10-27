@@ -217,7 +217,6 @@ section {
     margin: 0 auto;
     font-size: 50px;
     color: var(--ac);
-
 }
 
 .skills-icon h3 {
@@ -317,9 +316,91 @@ section {
 }
 
 
+/* CONTACT */
 
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid var(--ln);
+    border-radius: 20px;
+    background: linear-gradient(160deg, var(--bg3), var(--bg2));
+}
 
+.contact-form {
+    display: grid;
+    gap: 16px;
+}
 
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 14px;
+    color: var(--mu);
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--ln);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--tx);
+    font: inherit;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--ac);
+    box-shadow: 0 0 0 3px rgba(65, 94, 224, .25);
+}
+
+.contact-form .button {
+    justify-self: start;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.hp {
+    position: absolute;
+    left: -9999px;
+}
+
+.form-status {
+    margin: 0;
+    font-size: 15px;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+.form-status.ok {
+    color: #5fd38d;
+}
+
+.form-status.error {
+    color: #ff7a7a;
+}
 
 
 
@@ -385,13 +466,25 @@ section {
 
     .card-arrow {
         margin-right: auto;
-        display: none; 
+        display: none;
     }
-/*     .card-text a {
+
+    /*     .card-text a {
         color: var(--ac);
     } */
 
     .card-text a:hover {
         color: #fff;
     }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        gap: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
 }

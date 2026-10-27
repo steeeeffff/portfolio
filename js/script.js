@@ -66,3 +66,21 @@ if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         });
     });
 }
+
+
+
+//form
+const params = new URLSearchParams(location.search);
+const esito = params.get('status');
+const box = document.getElementById('form-status');
+
+const testi = {
+    ok: 'Messaggio inviato. Ti rispondo al più presto!',
+    invalid: 'Controlla i campi e riprova.',
+    error: 'Invio non riuscito. Riprova più tardi.'
+};
+
+if (box && testi[esito]) {
+    box.textContent = testi[esito];
+    box.className = 'form-status ' + (esito === 'ok' ? 'ok' : 'error');
+}
