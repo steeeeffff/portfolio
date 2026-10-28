@@ -46,14 +46,14 @@ form.addEventListener('submit', async e => {
     btn.disabled = false;
 }) */;
 
-(function () {
+/* (function () {
     var h = document.getElementById('hero'), t = document.getElementById('tag');
     h.addEventListener('pointermove', function (e) {
         var r = h.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
         h.style.setProperty('--x', x + 'px'); h.style.setProperty('--y', y + 'px');
         t.textContent = 'x ' + Math.round(x) + ' · y ' + Math.round(y);
     });
-})();
+})(); */
 /* Lenis: scroll fluido (opzionale, disattivato con prefers-reduced-motion) */
 if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.style.scrollBehavior = 'auto';
